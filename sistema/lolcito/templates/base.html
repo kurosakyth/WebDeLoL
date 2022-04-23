@@ -10,6 +10,12 @@
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
+        .lettercol {
+            color: white;
+        }
+        container {
+            float: center;
+        }
         ul {
           list-style-type: none;
           margin: 0;
@@ -33,20 +39,26 @@
         li a:hover:not(.active) {
           background-color: #111;
         }
-        
+        .font {
+            background-color: #0d1f3f;
+        }
         .active {
           background-color: #DC143C;
           border-radius: 20px;
         }
         </style>
   </head>
-  <body>
+  <body class="font">
+      <!--navbar-->
     <ul>
         <li><a class="active" href="#">Inicio</a></li>
         <li><a href="#">Champios</a></li>
         <li><a href="#">Noticias</a></li>
-      </ul>      
-      
+      </ul> <!--fin de navbar-->      
+
+      <!--agregar botón en el navbar al lado derecho para cambiar fondo, para esto se necesita
+    base de datos-->
+
     {% block contenido %}  {% endblock %}
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
